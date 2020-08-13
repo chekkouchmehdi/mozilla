@@ -1,0 +1,53 @@
+
+  <div id="manager-token-extension-content">
+    <div class="center">
+      <div id="manager-token-extension-request">
+
+        <h2>Generate New Token</h2>
+        <div id="manager-token-extension-form-content">
+          <label for="key">Application name: </label>
+          <br>
+          <input type="text" name="key" onkeypress="return event.charCode != 32" id="manager-token-extension-form-key"
+            required>
+  
+          <br>
+  
+  
+        </div>
+      </div>
+   
+    <div id="manager-token-extension-response">
+      <h3>Sensors</h3>
+      <pre id="manager-token-extension-response-data"></pre>
+      <div class="column">
+        <h3 id="manager-token-extension-response-sensors"></h3>
+      </div>
+    </div>
+      <button type="button" id="manager-token-extension-form-submit">Generate</button>
+    <br>
+    <br>
+    <label for="key">Token Generated </label>
+    <br>
+    <br>
+    <textarea readonly name="token" id="manager-token-extension-form-token" cols="60" rows="8" style="resize:none;"></textarea>
+
+      
+    <div id="manager-token-extension-response">
+      <h2 id="demo"> Authorized Applications</h2>
+      <pre id="manager-token-extension-response-active"></pre>
+    </div>
+  
+        <button type="button" id="manager-token-extension-form-active">save</button> 
+        <script>
+          document.getElementById("demo").innerHTML = "My First JavaScript";
+          </script>
+      
+  
+      <div id="manager-token-extension-response">
+        <h2>Unauthorized Applications</h2>
+         <pre id="manager-token-extension-response-deactive"></pre>
+       </div>
+   
+         <button type="button" id="manager-token-extension-form-deactive">save</button> 
+      </div>
+  </div>
